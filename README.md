@@ -13,7 +13,7 @@ A professional-grade desktop application designed for movie production houses to
 ## 🏗 Architectural Design (MVVM)
 The project is built on a strict separation of concerns, ensuring high testability and a clean codebase:
 
-* **View (JavaFX + FXML):** Completely passive. Its sole responsibility is **Data Binding** and triggering commands. It mirrors the behavior of `.xaml.cs` files in WPF.
+* **View (JavaFX + FXML):** Completely passive. Its sole responsibility is **Data Binding** and triggering commands.
 * **ViewModel:** The "brain" of the application. It manages the state using `Properties` and exposes logic through an **ICommand** interface, exactly like the `PersonVM` structure.
 * **Model & Services:** Handles business logic and database interactions, ensuring data integrity across the system.
 
